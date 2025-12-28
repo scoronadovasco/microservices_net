@@ -8,6 +8,7 @@ This project is a microservices-based architecture built using .NET. It leverage
 - MongoDB integration
 - Dockerized environment
 - Health checks for services
+- Modular structure with `Ticketing.Command` and `Ticketing.Query` projects
 
 ## Prerequisites
 - [.NET SDK](https://dotnet.microsoft.com/download) installed
@@ -52,6 +53,8 @@ docker-compose down
 ├── .gitignore           # Git ignore rules
 ├── README.md            # Project documentation
 ├── Projects/            # Source code for microservices
+│   ├── Ticketing.Command/  # Command-side microservice
+│   └── Ticketing.Query/    # Query-side microservice
 ```
 
 ## Contributing
