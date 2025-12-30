@@ -1,9 +1,8 @@
 using Common.Core.Events;
-using Microsoft.AspNetCore.Mvc.Diagnostics;
 using MongoDB.Bson.Serialization.Attributes;
 using Ticketing.Command.Domain.Common;
 
-namespace Ticketing.Command;
+namespace Ticketing.Command.Domain.EventModels;
 
 [BsonCollection("eventStores")]
 public class EventModel : Document
